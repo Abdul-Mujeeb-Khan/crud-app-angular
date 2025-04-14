@@ -1,0 +1,121 @@
+.form-container {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  
+    h2 {
+      margin: 0 0 2rem;
+      color: #333;
+    }
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+  
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-size: 0.875rem;
+  
+      &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+      }
+  
+      &.invalid {
+        border-color: var(--error-color);
+      }
+    }
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .exam-details {
+    margin-top: 2rem;
+  
+    .details-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .detail-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr auto;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: var(--background-color);
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+  
+    &.btn-primary {
+      background: #007bff;
+      color: white;
+  
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  
+    &.btn-secondary {
+      background: #6c757d;
+      color: white;
+  
+      &:hover {
+        background: #5a6268;
+      }
+    }
+  
+    &.btn-danger {
+      background: #dc3545;
+      color: white;
+  
+      &:hover {
+        background: #c82333;
+      }
+    }
+  }
+  
+  .form-actions {
+    margin-top: 2rem;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      .exam-details .detail-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+      }
+    }
+  } 

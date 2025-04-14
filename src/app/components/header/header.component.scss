@@ -1,0 +1,29 @@
+.header {
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    .logo {
+      img {
+        height: 40px;
+        width: auto;
+      }
+    }
+  
+    .nav-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 1rem;
+    }
+  } 

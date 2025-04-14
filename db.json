@@ -1,0 +1,20 @@
+{
+  "exams": [
+    {
+      "id": null,
+      "examName": "Mid Term",
+      "examKey": "Math123",
+      "phone": "123-456-7890",
+      "examHours": 1,
+      "examDetails": []
+    },
+    {
+      "id": null,
+      "examName": "Mid Term",
+      "examKey": "Math123",
+      "phone": "123-456-7890",
+      "examHours": 2,
+      "examDetails": []
+    }
+  ]
+}

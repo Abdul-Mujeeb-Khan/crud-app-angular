@@ -1,0 +1,149 @@
+.home-container {
+    padding: 1rem;
+  
+    .search-box {
+      position: relative;
+      margin-bottom: 1rem;
+  
+      .search-input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        font-size: 0.875rem;
+  
+        &:focus {
+          outline: none;
+          border-color: var(--primary-color);
+        }
+      }
+  
+      .clear-btn {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--secondary-color);
+        font-size: 1.25rem;
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+      }
+  
+      th {
+        font-weight: 600;
+        background-color: var(--background-color);
+      }
+  
+      .actions {
+        display: flex;
+        gap: 0.5rem;
+      }
+  
+      .no-data {
+        text-align: center;
+        padding: 2rem;
+        color: var(--secondary-color);
+      }
+    }
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  
+    h2 {
+      margin: 0;
+      color: #333;
+    }
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 8px;
+    transition: background-color 0.2s;
+  
+    &.btn-edit {
+      background-color: #007bff;
+      color: white;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    &.btn-delete {
+      background-color: #dc3545;
+      color: white;
+  
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    .table-container {
+      table {
+        th, td {
+          padding: 8px;
+        }
+  
+        .actions {
+          .btn {
+            padding: 6px 12px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-header {
+      padding: 15px;
+    }
+  
+    .card-content {
+      padding: 15px;
+    }
+  
+    .table-container {
+      table {
+        font-size: 14px;
+  
+        th, td {
+          padding: 6px;
+        }
+      }
+    }
+  } 
